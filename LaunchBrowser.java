@@ -14,8 +14,8 @@ public class LaunchBrowser {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		driver.get("https://www.guru99.com/implicit-explicit-waits-selenium.html");
-
+		//driver.get("https://www.guru99.com/implicit-explicit-waits-selenium.html");
+		driver.navigate("https://www.guru99.com/implicit-explicit-waits-selenium.html");
 	}
 
 }
